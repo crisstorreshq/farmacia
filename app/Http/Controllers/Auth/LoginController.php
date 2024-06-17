@@ -33,7 +33,7 @@ class LoginController extends Controller
 
         if(!empty($data)){
             if($data[0]->clave == 1){
-                if(User::getAuth($userName, 8))
+                if(User::getAuth($userName, 30))
                 {
                     Auth::loginUsingId($data[0]->principal_id, false);
                     return redirect('/home');

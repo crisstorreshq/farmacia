@@ -6,175 +6,47 @@ import api from './../../../../helpers/api'
 //este es!!
 const sidebarNavs = [
   {
-    name: "Medicina Física",
+    name: "Bodega de Farmacia",
     type: 'section',
-    servicio: 46,
+    servicio: 57,
     children: [
       {
-        name: 'Agregar Paciente',
+        name: 'Registro de Vencimiento',
         type: 'item',
         icon: <PostAdd />,
-        link: '/addMedFisica',
+        link: '/reg_venc',
         rol: [1, 2]
       },
-      {
-        name: 'Paciente Ingresados',
-        type: 'item',
-        icon: <Group />,
-        link: '/allMedFisica',
-        rol: [1, 2]
-      },
-      {
-        name: 'Reporte',
-        type: 'item',
-        icon: <CloudDownload />,
-        link: '/exportMedFisica',
-        rol: [1, 2]
-      },
-      {
-        name: 'REM BSB17',
-        type: 'item',
-        icon: <Assessment />,
-        link: '/exportBsb17',
-        rol: [1]
-      },
-      {
-        name: 'REM A28',
-        type: 'item',
-        icon: <Assessment />,
-        link: '/exportA28',
-        rol: [1]
-      },
+      // {
+      //   name: 'Paciente Ingresados',
+      //   type: 'item',
+      //   icon: <Group />,
+      //   link: '/allMedFisica',
+      //   rol: [1, 2]
+      // },
+      // {
+      //   name: 'Reporte',
+      //   type: 'item',
+      //   icon: <CloudDownload />,
+      //   link: '/exportMedFisica',
+      //   rol: [1, 2]
+      // },
+      // {
+      //   name: 'REM BSB17',
+      //   type: 'item',
+      //   icon: <Assessment />,
+      //   link: '/exportBsb17',
+      //   rol: [1]
+      // },
+      // {
+      //   name: 'REM A28',
+      //   type: 'item',
+      //   icon: <Assessment />,
+      //   link: '/exportA28',
+      //   rol: [1]
+      // },
     ],
-  },
-  {
-    name: "UMT",
-    type: 'section',
-    servicio: 55,
-    children: [
-      {
-        name: 'Agregar Prestación',
-        type: 'item',
-        icon: <PostAdd />,
-        link: '/addUMT',
-      },
-      {
-        name: 'Prestación Ingresados',
-        type: 'item',
-        icon: <Group />,
-        link: '/allUMT',
-      },
-      {
-        name: 'Reporte',
-        type: 'item',
-        icon: <CloudDownload />,
-        link: '/exportUMT',
-      },
-    ],
-  },
-  {
-    name: "Imagenología",
-    type: 'section',
-    servicio: 56,
-    children: [
-      {
-        name: 'Agregar Prestación',
-        type: 'item',
-        icon: <PostAdd />,
-        link: '/addRX',
-      },
-      {
-        name: 'Prestaciones Ingresadas',
-        type: 'item',
-        icon: <Group />,
-        link: '/allRX',
-      },
-      {
-        name: 'Compras de Servicio',
-        type: 'item',
-        icon: <AddShoppingCart />,
-        link: '/compraServicio',
-      },
-      {
-        name: 'Reporte REM',
-        type: 'item',
-        icon: <CloudDownload />,
-        link: '/exportRX',
-      },
-      {
-        name: 'Reporte Prestaciones',
-        type: 'item',
-        icon: <Assessment />,
-        link: '/todoRx',
-      },
-    ],
-  },
-
-  {
-    name: "Patología",
-    type: 'section',
-    servicio: 39,
-    children: [
-      {
-        name: 'Agregar Prestación',
-        type: 'item',
-        icon: <PostAdd />,
-        link: '/addPatologia',
-      },
-      {
-        name: 'Prestaciones Ingresadas',
-        type: 'item',
-        icon: <Group />,
-        link: '/allPatologia',
-      },
-      {
-        name: 'Reporte',
-        type: 'item',
-        icon: <CloudDownload />,
-        link: '/exportPatologia',
-      },
-    ],
-  },
-  
-  {
-    name: "Ayuda",
-    type: 'section',
-    servicio: 14,
-    children: [
-      {
-        name: 'Agregar Especialidad',
-        type: 'item',
-        icon: <AddBox />,
-        link: '/addEspec',
-      },
-      {
-        name: 'Duplicidad de Fichas',
-        type: 'item',
-        icon: <PeopleOutline />,
-        link: '/dupFichas',
-      },
-    ],
-  },
-
-  {
-    name: "Lista Espera",
-    type: 'section',
-    servicio: 19,
-    children: [
-      {
-        name: 'Policlínicos',
-        type: 'item',
-        icon: <DateRange />,
-        link: '/lePoli',
-      },
-      {
-        name: 'Vista Mensual',
-        type: 'item',
-        icon: <List />,
-        link: '/leMes',
-      },
-    ],
-  },
+  }
 ];
 
 let servicioFiltado = []

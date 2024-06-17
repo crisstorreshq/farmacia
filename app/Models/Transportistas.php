@@ -4,14 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class IngresosMedFisica extends Model
+class Transportistas extends Model
 {
-    protected $table = 'BD_PPV.dbo.IngresosMedFisica';
+    protected $table = 'BD_BodegaFarmacia.dbo.Transportistas';
 
     public $timestamps = false;
 
     protected $fillable = [
-        'name', 'estado'
+        'name', 'vigente'
     ];
-
 }
