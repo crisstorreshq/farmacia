@@ -15,4 +15,8 @@ export default{
         axios.get(`${BASE_API_URL}/getProductos`),
     storeAdquisiciones: (req) =>
         axios.post(`${BASE_API_URL}/adquisiciones`, req),
-    }
+    getProfesionales: (id) =>
+        axios.get(`${BASE_API_URL}/getProfesionales/${id}`),
+    storeDespachos: (req) =>
+        axios.post(`${BASE_API_URL}/despachos`, req),
+}

@@ -157,7 +157,7 @@ const Index = () => {
       <Formik
         initialValues={initialValues}
         validationSchema={FORM_VALIDATION}
-        onSubmit={(values) => {
+        onSubmit={(values, { resetForm }) => {
           const sentData = {
             'tipo_adquisicion_id': values.tipo_adquisicion?.id,
             'fecha_recepcion': values.fecha_recepcion,
@@ -175,8 +175,9 @@ const Index = () => {
               MySwal.fire({
                 icon: 'success',
                 title: '¡Formulario enviado!',
-                text: res.data,
+                text: res.data.message,
               })
+              resetForm(( { values:  initialValues} ))
             })
             .catch(err => {
               MySwal.fire({

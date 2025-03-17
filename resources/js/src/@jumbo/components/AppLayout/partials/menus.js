@@ -6,44 +6,65 @@ import api from './../../../../helpers/api'
 //este es!!
 const sidebarNavs = [
   {
-    name: "Bodega de Farmacia",
+    name: "Registro de Vencimiento",
     type: 'section',
     servicio: 57,
     children: [
       {
-        name: 'Registro de Vencimiento',
+        name: 'Ingreso de Recepciones',
         type: 'item',
         icon: <PostAdd />,
         link: '/reg_venc',
         rol: [1, 2]
       },
       // {
-      //   name: 'Paciente Ingresados',
+      //   name: 'Recepciones Ingresadas',
       //   type: 'item',
       //   icon: <Group />,
       //   link: '/allMedFisica',
       //   rol: [1, 2]
       // },
+    ],
+  },
+  {
+    name: "Registro de Cajas Ingresadas en Bodega",
+    type: 'section',
+    servicio: 57,
+    children: [
+      {
+        name: 'Ingreso de Recepciones',
+        type: 'item',
+        icon: <PostAdd />,
+        link: '/reg_despacho',
+        rol: [1, 2]
+      },
       // {
-      //   name: 'Reporte',
+      //   name: 'Recepciones Ingresadas',
       //   type: 'item',
-      //   icon: <CloudDownload />,
-      //   link: '/exportMedFisica',
+      //   icon: <Group />,
+      //   link: '/allMedFisica',
       //   rol: [1, 2]
       // },
+    ],
+  },
+  {
+    name: "Entrega de Pedidos Laboratorio",
+    type: 'section',
+    servicio: 57,
+    children: [
+      {
+        name: 'Ingreso de Recepciones',
+        type: 'item',
+        icon: <PostAdd />,
+        link: '/reg_entrega',
+        rol: [1, 2]
+      },
       // {
-      //   name: 'REM BSB17',
+      //   name: 'Recepciones Ingresadas',
       //   type: 'item',
-      //   icon: <Assessment />,
-      //   link: '/exportBsb17',
-      //   rol: [1]
-      // },
-      // {
-      //   name: 'REM A28',
-      //   type: 'item',
-      //   icon: <Assessment />,
-      //   link: '/exportA28',
-      //   rol: [1]
+      //   icon: <Group />,
+      //   link: '/allMedFisica',
+      //   rol: [1, 2]
       // },
     ],
   }
