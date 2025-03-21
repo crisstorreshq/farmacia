@@ -4,20 +4,19 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Transportistas extends Model
+class TipoDocumento extends Model
 {
-    protected $table = 'BD_BodegaFarmacia.dbo.Transportistas';
-    protected $primaryKey = 'transportista_id';
+    protected $table = 'BD_BodegaFarmacia.dbo.TipoDocumento';
+    protected $primaryKey = 'tipo_documento_id';
     public $timestamps = false;
 
     protected $fillable = [
         'nombre',
-        'rut',
     ];
 
     // Relación 1:N con Adquisicion
     public function adquisiciones()
     {
-        return $this->hasMany(Adquisicion::class, 'transportista_id');
+        return $this->hasMany(Adquisicion::class, 'tipo_documento_id');
     }
 }
